@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Серегй Сагалатов](https://up.htmlacademy.ru/adaptive/18/user/424675).
-* Наставник: `Неизвестно`.
+* Наставник: [Аслан Березгов](https://htmlacademy.ru/profile/id858779).
 
 ---
 
