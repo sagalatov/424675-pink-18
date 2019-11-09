@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+        alt="Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">Html Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__photos">
+      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="promo">
+      <p class="promo__item">
+        Поделитесь своей историей и получите шанс выиграть
+        ценный приз — 1000 миль на вашу бонусную карту!
+        Пожалуйста, заполните форму ниже:
+      </p>
+    </div>
+    <section class="competition-form">
+      <form class="competition-form__filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="competition-form__item">
+          <ul class="competition-form__list site-list">
+            <li class="site-list__item">
+              <label for="filter-last-name">Фамилия:</label>
+              <input class="visually-hidden" type="text" name="last-name" placeholder="Укажите фамилию *"
+                id="filter-last-name">
+            </li>
+            <li class="site-list__item">
+              <label for="filter-first-name">Имя:</label>
+              <input class="visually-hidden" type="text" name="first-name" placeholder="Укажите имя *"
+                id="filter-first-name">
+            </li>
+            <li class="site-list__item">
+              <label for="filter-middle-name">Отчество:</label>
+              <input class="visually-hidden" type="text" name="middle-name" placeholder="Ну и отчество тоже"
+                id="filter-middle-name">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="competition-form__item">
+          <legend class="competition-form__title">Ваши безбашенные
+            достижения в путешествии</legend>
+          <ul class="competition-form__list site-list">
+            <li class="site-list__item">
+              <input class="visually-hidden" name="selfie" type="checkbox" id="filter-selfie" checked>
+              <label for="filter-selfie">Сделал селфи с акулой</label>
+            </li>
+            <li class="site-list__item">
+              <input class="visually-hidden" name="sunburn" type="checkbox" id="filter-sunburn" checked>
+              <label for="filter-sunburn">Обгорел на пляже</label>
+            </li>
+            <li class="site-list__item">
+              <input class="visually-hidden" name="Chuck_Norris" type="checkbox" id="filter-Chuck_Norris">
+              <label for="filter-Chuck_Norris">Видел Чака Норриса</label>
+            </li>
+            <li class="site-list__item">
+              <input class="visually-hidden" name="souvenirs" type="checkbox" id="filter-souvenirs">
+              <label for="filter-souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="site-list__item">
+              <input class="visually-hidden" name="tower" type="checkbox" id="filter-tower" checked>
+              <label for="filter-tower">Удержал башню</label>
+            </li>
+            <li class="site-list__item">
+              <input class="visually-hidden" name="hotel" type="checkbox" id="filter-hotel">
+              <label for="filter-hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="competition-form__item">
+          <legend class="competition-form__title">С каким приложением путешествовали?</legend>
+          <ul class="competition-form__list site-list">
+            <li class="site-list__item">
+              <label for="filter-phone-number">Номер телефона</label>
+              <input class="visually-hidden" type="number" name="phone-number" placeholder="Номер, пожалуйста"
+                id="filter-phone-number">
+            </li>
+            <li class="site-list__item">
+              <label for="filter-email-number">Адрес почты</label>
+              <input class="visually-hidden" type="email" name="email-address" placeholder="Введите почту *"
+                id="filter-email-number">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="competition-form__item">
+          <legend class="competition-form__title">С каким приложением путешествовали?</legend>
+          <ul class="competition-form__list site-list">
+            <li class="site-list__item">
+              <input class="visually-hidden" type="radio" name="ios" value="electric" id="filter-ios">
+              <label for="filter-ios">Pink для iOS</label>
+            </li>
+            <li class="site-list__item">
+              <input class="visually-hidden" type="radio" name="android" value="on-battery" id="filter-android" checked>
+              <label for="filter-android">Pink на Android</label>
+            </li>
+            <li class="site-list__item">
+              <input class="visually-hidden" type="radio" name="windows-phone" value="electric"
+                id="filter-windows-phone">
+              <label for="filter-windows-phone">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="competition-form__item">
+          <legend class="competition-form__title">Опишите свои эмоции</legend>
+          <textarea rows="10" cols="45" name="text-message"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+
+        <button type="submit" class="competition-form__button">
+          Отправить форму
+        </button>
+      </form>
+      <small class="competition-form__required-fields">
+        <sup>*</sup> — обязательные поля
+      </small>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+        alt="Логтип PINK">
+    </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="Twitter">
+        </li>
+        <li class="social__item">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="Facebook">
+        </li>
+        <li class="social__item">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="play-market">
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
