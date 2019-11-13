@@ -1,3 +1,12 @@
 .main-nav__list a {
   text-decoration: none;
 }
+
+.main-nav__toggle {
+  width: 24px;
+  height: 23px;
+  font-size: 0;
+  background-image: url(../../img/icon-menu-cross.svg);
+  background-color: inherit;
+  border: none;
+}
