@@ -1,0 +1,36 @@
+.publication-card {
+  background: $white-two;
+  margin: 0 20px 20px 20px;
+}
+
+.publication-card__name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.publication-card__time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: light;
+}
+
+.publication-card__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: light;
+}
+
+.publication-card__like {
+    width: 13px;
+    height: 12px;
+    background-image: url(../../img/icon-heart.svg);
+    background-color: inherit;
+    border: none;
+    background-position: 1px;
+}
+
+.publication-card__like-description, .publication-card__like-total {
+  color: $pink;
+}
+
