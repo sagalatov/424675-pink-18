@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
         alt="Пинк">
     </a>
     <nav class="main-nav">
@@ -35,23 +36,25 @@
   <main class="page-main">
     <h1 class="visually-hidden">Пинк</h1>
     <section class="about-application">
-      <img class="about-application__photo" src="https://via.placeholder.com/150x150" width="150" height="150"
+      <div class="about-application__container">
+      <img class="about-application__photo" src="img/iphone-hand-mobile@1x.png" width="320" height="314"
         alt="Пинк">
+      </div>
       <button class="abiut-application__download">Скачать приложение</button>
-      <ul class="technology-list">
+      <ul class="technology-list site-list">
         <li class="technology-list__item">
           <a>
-            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Скачать для IOS">
+            <img src="img/logo-apple.svg" width="47" height="56" alt="Скачать для IOS">
           </a>
         </li>
         <li class="technology-list__item">
           <a>
-            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Скачать для Android">
+            <img src="img/logo-android.svg" width="43" height="47" alt="Скачать для Android">
           </a>
         </li>
         <li class="technology-list__item">
           <a>
-            <img src="https://via.placeholder.com/150x150" width="150" height="150"
+            <img src="img/logo-microsoft.svg" width="44" height="41"
               alt="Скачать для Windows, Windows Phone">
           </a>
         </li>
@@ -66,7 +69,8 @@
         <p>Устали от серости мегаполиса?</p>
         <p>Нам есть что предложить!</p>
       </div>
-      <ul class="advantages__list">
+      <div class="advantages__container">
+      <ul class="advantages__list site-list">
         <li class="advantages__item">
           <h3 class="advantages__title">
             Поднимает настроение
@@ -94,13 +98,14 @@
         </li>
       </ul>
       <div class="advantages__photo">
-        <img src="https://via.placeholder.com/150x150" width="150" height="150"
+        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320"
           alt="Скачать для Windows, Windows Phone">
+      </div>
       </div>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
-        <h2 class="reviews__title">Отзывы о нас</h2>
+        <h2 class="reviews__title visually-hidden">Отзывы о нас</h2>
         <div class="reviews__list  slider__list">
           <blockquote class="reviews__item  slider__item">
             <cite class="reviews__author-name">Трэвис Баркер</cite>
