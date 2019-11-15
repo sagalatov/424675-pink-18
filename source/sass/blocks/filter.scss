@@ -1,0 +1,89 @@
+.filter {
+  background: $white-two;
+  margin-bottom: 40px;
+}
+
+.filter__size {
+  width: 44px;
+  height: 44px;
+  font-size: 0;
+  background-image: url("../../img/icon-editor-crop.svg");
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+}
+
+.filter__color {
+  margin-bottom: 39px;
+  width: 48px;
+  height: 43px;
+  font-size: 0;
+  background-image: url("../../img/icon-editor-fill.svg");
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+}
+
+.filter__contrast {
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background-image: url("../../img/icon-editor-contrast.svg");
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+}
+
+.filter__unload {
+  width: 280px;
+  background: none;
+  border: 3px solid $pink;
+  border-radius: 25px 25px;
+  padding: 15px 25px;
+  color: $pink;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.filter__cancel {
+  width: 280px;
+  background: none;
+  border: 3px solid $dark-blue-down;
+  border-radius: 25px 25px;
+  padding: 15px 25px;
+  color: $dark-blue-down;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-bottom: 41px;
+}
+
+input[type=range] {
+  margin-bottom: 73px;
+  -webkit-appearance: none;
+  width: 200px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100px;
+  height: 2px;
+  cursor: pointer;
+  background: $black;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 2px solid $pink;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
