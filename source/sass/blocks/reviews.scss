@@ -1,0 +1,29 @@
+.reviews__author-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: bold;
+  color: $black;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.slider__toggle {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  margin-left: 19px;
+  outline: none;
+  background: $dark-blue-slider;
+  border-radius: 50%;
+  font-size: 0;
+    &:active {
+      background-color: $white;
+      border: 3px solid $dark-blue;
+      width: 12px;
+      height: 12px;
+  }
+}
