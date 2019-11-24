@@ -1,8 +1,27 @@
+.main-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .main-nav__list a {
   text-decoration: none;
 }
 
+.main-nav .site-list__item {
+  border-top: 1px solid black;
+  width: 100%;
+}
+
 .main-nav__toggle {
+  position: absolute;
+  top: 21px;
+  left: 277px;
   width: 24px;
   height: 23px;
   font-size: 0;

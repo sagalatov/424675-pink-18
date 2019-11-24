@@ -9,7 +9,7 @@
 }
 
 input[type="text"], input[type="number"], input[type="email"]{
-  min-width: 177px;  
+  min-width: 177px;
   padding: 22px 79px 18px 22px;
   margin-bottom: 29px;
   font-size: 18px;
@@ -28,19 +28,29 @@ input[type="text"]::placeholder, input[type="number"]::placeholder, input[type="
 
 .competition-form__item:nth-child(2n) {
   background-color: $white-two;
-  margin-bottom: 41px;
+
+
+ margin-bottom: 41px;
 }
 
+
 .competition-form__title {
-  color: $pink;
+
+ color: $pink;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
-input[type="radio"] + label, input[type="checkbox"] + label,{
-  color: $dark-blue;
-  font-size: 18px;
+i
+nput[type="radio"] + label, input[type="checkbox"] + label,{
+
+
+
+olor: $dark-blue;
+
+
+ font-size: 18px;
   line-height: 30px;
   font-weight: normal;
   text-transform: none;
@@ -73,6 +83,7 @@ margin-bottom: 52px;
   outline: none;
   margin-bottom: 46px;
 }
+
 
 .competition-form__required-fields {
   font-size: 14px;

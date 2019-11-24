@@ -1,4 +1,6 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: $dark-blue;
   color: $white;
 }
@@ -13,4 +15,8 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+}
+
+.page-header__logo {
+  padding: 20px;
 }

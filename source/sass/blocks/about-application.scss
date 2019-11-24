@@ -1,26 +1,59 @@
 .about-application {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: $dark-blue;
   color: $white;
 }
 
 .about-application__container {
+  position: relative;
+  min-height: 402px;
+  min-width: 320px;
   background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 28px;
 }
 
 .abiut-application__download {
   background: none;
   border: 3px solid $white;
   border-radius: 25px 25px;
-  padding: 15px 25px;
+  padding: 15px 44px;
+  margin-bottom: 36px;
   color: $white;
   font-size: 18px;
   line-height: 18px;
 }
 
 .about-application__support {
+  padding: 0;
+  margin: 0;
   color: $white;
   font-size: 14px;
   line-height: 24px;
-  font-weight: lighte;
+  font-weight: 300;
+  margin-bottom: 29px;
 }
+
+.about-application__slogan {
+  margin: 0;
+  padding: 0;
+  margin-top: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.about-application__photo {
+position: absolute;
+top: 117px;
+width: 258px;
+}
+
