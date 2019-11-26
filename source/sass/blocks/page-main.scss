@@ -1,8 +1,11 @@
-.page-main > * > * {
-  border: 1px solid yellow;
-}
-
 .promo__item {
  font-size: 14px;
  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__item {
+    font-size: 18px;
+    line-height: 30px;
+   }
 }

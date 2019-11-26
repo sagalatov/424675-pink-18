@@ -1,5 +1,6 @@
 .main-nav {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   list-style: none;
   margin: 0;
@@ -12,10 +13,16 @@
   justify-content: center;
 }
 
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .main-nav__list a {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
-  min-width: 320px;
   padding: 15px;
   color: $white;
   font-size: 18px;
@@ -33,7 +40,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 21px;
-  left: 277px;
+  right: 20px;
   width: 24px;
   height: 23px;
   font-size: 0;
@@ -41,6 +48,7 @@
   background-color: inherit;
   border: none;
 }
+
 
 
 
