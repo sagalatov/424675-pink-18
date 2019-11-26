@@ -65,5 +65,21 @@ padding: 20px;
   }
 
 
+
+  .publication-card__description-panorama .publication-card__text {
+    max-width: 620px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: light;
+  }
+
+  .publication-card {
+    min-width: 300px;
+  }
+
+  .publication-card__description-panorama {
+    min-width: 620px;
+    height: 200px;
+  }
 }
 
