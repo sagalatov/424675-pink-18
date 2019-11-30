@@ -6,6 +6,10 @@
   margin-top: 64px;
 }
 
+.page-footer-index {
+display: none;
+}
+
 .page-footer__copyright {
   min-height: 100px;
 }
@@ -54,6 +58,10 @@ justify-content: space-between;
     min-width: 120px;
     justify-content: space-between;
     align-items: center;
+    display: flex;
+  }
+
+  .page-footer-index {
     display: flex;
   }
 }

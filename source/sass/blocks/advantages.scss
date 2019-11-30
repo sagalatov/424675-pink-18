@@ -13,3 +13,20 @@
   line-height: 24px;
   font-weight: light;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+  }
+
+  .advantages__item {
+    text-align: left;
+  }
+
+  .advantages__photo {
+    min-width: 300px;
+  }
+}
