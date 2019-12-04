@@ -4,6 +4,7 @@
   flex-direction: column;
   background: $white-two;
   margin-bottom: 30px;
+  width: 280px;
 }
 
 .publication-card__panorama {
@@ -16,7 +17,7 @@
 }
 
 .publication-card__description {
-padding: 20px;
+  padding: 20px;
 }
 
 .publication-card__name {
@@ -59,27 +60,28 @@ padding: 20px;
 }
 
 @media (min-width: $tablet-width) {
+
   .publication-card__panorama {
     background-image: url(../../img/panorama-tablet@1x.jpg);
     min-height: 509px;
   }
 
-
-
-  .publication-card__description-panorama .publication-card__text {
-    max-width: 620px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: light;
-  }
-
   .publication-card {
-    min-width: 300px;
+    width: 300px;
+    min-height: 455px;
   }
 
-  .publication-card__description-panorama {
+  .publication-card:nth-child(1){
     min-width: 620px;
-    height: 200px;
+    min-height: 100px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .publication-card:nth-child(1){
+    min-width: 940px;
+    min-height: 100px;
+  }
+
 }
 
