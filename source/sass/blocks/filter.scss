@@ -1,5 +1,12 @@
 .filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: $white-two;
+  margin-bottom: 40px;
+}
+
+.filter__photo-item {
   margin-bottom: 40px;
 }
 
@@ -14,7 +21,6 @@
 }
 
 .filter__color {
-  margin-bottom: 39px;
   width: 48px;
   height: 43px;
   font-size: 0;
@@ -87,3 +93,5 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -7px;
 }
+
+

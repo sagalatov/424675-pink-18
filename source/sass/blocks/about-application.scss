@@ -1,26 +1,125 @@
 .about-application {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: $dark-blue;
   color: $white;
 }
 
 .about-application__container {
+  position: relative;
+  min-height: 402px;
+  min-width: 320px;
   background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 28px;
 }
 
 .abiut-application__download {
   background: none;
   border: 3px solid $white;
   border-radius: 25px 25px;
-  padding: 15px 25px;
+  padding: 15px 44px;
+  margin-bottom: 36px;
   color: $white;
   font-size: 18px;
   line-height: 18px;
 }
 
 .about-application__support {
+  padding: 0;
+  margin: 0;
   color: $white;
   font-size: 14px;
   line-height: 24px;
-  font-weight: lighte;
+  font-weight: 300;
+  margin-bottom: 29px;
 }
+
+.about-application__slogan {
+  margin: 0;
+  padding: 0;
+  margin-top: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.about-application__photo {
+position: absolute;
+top: 117px;
+width: 258px;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .container {
+    display: inline-block;
+    position: relative;
+    min-height: 540px;
+    min-width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .about-application {
+    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 157px;
+    width: 412px;
+    height: 468px;
+    background-image: url(../../img/iphone-hand-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-position: -150px 0;
+    background-size: cover;
+  }
+
+  .about-application__container {
+    position: relative;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 28px;
+    min-height: 0px;
+    min-width: 0px;
+  }
+
+  .about-application__photo {
+    display: none;
+    }
+
+    .about-application__support {
+      z-index: 1;
+    }
+
+    .about-application__slogan {
+      justify-content: start;
+      z-index: 1;
+    }
+
+    .abiut-application__download {
+      z-index: 1;
+    }
+
+
+ }
+
