@@ -163,60 +163,106 @@
     </section>
     <section class="tariff">
       <h2 class="visually-hidden">Тарифы</h2>
-      <div class="tariff__wrapper slider">
-        <div class="tariff__list  slider__list">
-          <div class="tariff__title-wrapper">
-            <h3 class="tariff__title">Стандарт</h3>
-            <p class="tariff__cost">3,99 usd</p>
-          </div>
-          <div class="tariff__item-list">
-            <p class="tariff__option">
-              Розовый фильтр
-              <img src="img/icon-yes.svg" width="31" height="21" alt="Входит в тариф">
-            </p>
-            <p class="tariff__option">
-              Смайлики
-              <img src="img/icon-yes.svg" width="31" height="21" alt="Входит в тариф">
-            </p>
-            <p class="tariff__option">
-              Комментарии
-              <img src="img/icon-no.svg" width="27" height="26" alt="Входит в тариф">
-            </p>
-          </div>
-        </div>
-        <p class="tariff__toggles slider__toggles">
+      <table class="tariff__list">
+        <tr>
+          <th class="tariff__header">
+          </th>
+          <th class="tariff__header">
+            <p class="tariff__name">База</p>
+            <p class="tariff__cost">1,99 usd</p>
+          </th>
+          <th class="tariff__header">
+              <p class="tariff__name">Стандарт</p>
+              <p class="tariff__cost">3,99 usd</p>
+          </th>
+          <th class="tariff__header">
+              <p class="tariff__name">Анлим</p>
+              <p class="tariff__cost">9,99 usd</p>
+          </th>
+        </tr>
+        <tr>
+          <td class="tariff__value">
+            Розовый фильтр
+          </td>
+          <td class="tariff__field">
+            <img src="img/icon-yes.svg" width="31" height="21" alt="Входит в тариф">
+          </td>
+          <td class="tariff__field">
+            <img src="img/icon-yes.svg" width="31" height="21" alt="Входит в тариф">
+          </td>
+          <td class="tariff__field">
+            <img src="img/icon-yes.svg" width="31" height="21" alt="Входит в тариф">
+          </td>
+        </tr>
+        <tr>
+          <td class="tariff__value">
+            Смайлики
+          </td>
+          <td class="tariff__field">
+            <img src="img/icon-no.svg" width="27" height="26" alt="Не входит в тариф">
+          </td>
+          <td class="tariff__field">
+            <img src="img/icon-yes.svg" width="31" height="21" alt="Входит в тариф">
+          </td>
+          <td class="tariff__field">
+            <img src="img/icon-yes.svg" width="31" height="21" alt="Входит в тариф">
+          </td>
+        </tr>
+        <tr>
+          <td class="tariff__value">
+            Комментарии
+          </td>
+          <td class="tariff__field">
+            <img src="img/icon-no.svg" width="27" height="26" alt="Не входит в тариф">
+          </td>
+          <td class="tariff__field">
+            <img src="img/icon-no.svg" width="27" height="26" alt="Не входит в тариф">
+          </td>
+          <td class="tariff__field">
+            <img src="img/icon-yes.svg" width="31" height="21" alt="Входит в тариф">
+          </td>
+        </tr>
+      </table>
+      <p class="tariff__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
-      </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <b class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</b>
-      <p class="contacts__text">
-        Звоните<br>
-        <a class="contacts__phone" href="tel:+78125556666">
-          <span class="contacts__phone-mobile">
-            +7 (812) 555-66-66
-          </span>
-        </a>
-      </p>
-      <p class="contacts__text">
-        Пишите:<br>
-        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-          <span class="contacts__email-address">
-            mail@htmlacademy.ru
-          </span>
-        </a>
-      </p>
-      <p class="contacts__text">
-        Приезжайте в гости:<br>
-        <span class="contacts__address">
-          ул. Большая
-          Конюшенная, 19/8
-        </span>
-      </p>
+      <div class="contacts__contacts-blocks">
+        <div class="contacts__phone-block">
+          <p class="contacts__text">
+            Звоните<br>
+            <a class="contacts__phone" href="tel:+78125556666">
+              <span class="contacts__phone-mobile">
+                +7 (812) 555-66-66
+              </span>
+            </a>
+          </p>
+        </div>
+        <div class="contacts__email-block">
+          <p class="contacts__text">
+            Пишите:<br>
+            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+              <span class="contacts__email-address">
+                mail@htmlacademy.ru
+              </span>
+            </a>
+          </p>
+        </div>
+        <div class="contacts__addres-block">
+          <p class="contacts__text">
+            Приезжайте в гости:<br>
+            <span class="contacts__address">
+              ул. Большая
+              Конюшенная, 19/8
+            </span>
+          </p>
+        </div>
+      </div>
       <div class="contacts__map cotacts__map--point">
         <div class="contacts__map-design">
         </div>

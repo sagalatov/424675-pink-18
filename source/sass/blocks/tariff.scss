@@ -1,36 +1,47 @@
 .tariff {
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 126px;
 }
 
-.tariff__title-wrapper{
-  background-color: $dark-blue;
+.tariff__list {
+  border-collapse: collapse;
+}
+
+.tariff__header {
+  min-width: 152px;
+  background: $dark-blue;
   color: $white;
+  text-transform: uppercase;
+  border: 2px solid $white-two;
+  border-radius: 5px 5px;
 }
 
-.tariff__title {
-  font-size: 18px;
+.tariff__header:nth-child(1) {
+  background: transparent;
+}
+
+.tariff__name {
+  font-size: 16px;
   line-height: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
+  margin: 10px;
 }
 
 .tariff__cost {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 30px;
-  text-transform: uppercase;
-  font-weight: light;
+  font-weight: 300;
+  margin: 10px;
 }
 
-.tariff__item-list {
-  background-color: $white;
-}
 
-.tariff__option {
-  position: relative;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: normal;
+.tariff__toggles {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 
