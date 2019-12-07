@@ -96,6 +96,7 @@
     background-image: url("/img/bg-triangle-white-footer.svg");
     background-size: contain;
     background-position: 0 0;
+    z-index: 1;
   }
 
   .contacts__map-marker {
@@ -112,3 +113,54 @@
     margin-bottom: 57px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .contacts__text {
+    margin: 0;
+    min-width: 300px;
+  }
+
+  .contacts__email-block {
+    order: 3;
+  }
+
+  .contacts__phone-block {
+    order: 1;
+  }
+
+  .contacts__addres-block {
+    order: 2;
+  }
+
+  .contacts__contacts-blocks {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .contacts__map {
+    background-image: url("/img/bg-map-desktop@1x.jpg");
+    width: 1200px;
+    height: 520px;
+    background-position: 0 -258px;
+  }
+
+  .contacts__map-design {
+    height: 300px;
+    background-image: url("/img/bg-triangle-white-footer.svg");
+    background-size: contain;
+    background-position: 0 0;
+    z-index: 1;
+  }
+
+  .contacts__map-marker {
+    position: absolute;
+    top: 281px;
+    left: 573px;
+  }
+}
+
