@@ -53,12 +53,10 @@
   .main-nav {
     flex-grow: 0;
     flex-direction: row;
-    border: 1px solid red;
   }
 
   .main-nav__list {
     flex-direction: row;
-    border: 1px solid yellow;
   }
 
   .main-nav__list a {
@@ -71,6 +69,10 @@
 
   .main-nav__toggle {
     visibility: hidden;
+  }
+
+  .main-nav .site-list__item {
+    border-top: none;
   }
 
 }
