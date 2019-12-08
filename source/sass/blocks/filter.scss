@@ -6,6 +6,20 @@
   margin-bottom: 40px;
 }
 
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 220px;
+  margin-bottom: 30px;
+}
+
+.filter__button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .filter__photo-item {
   margin-bottom: 40px;
 }
@@ -50,6 +64,7 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+  margin-bottom: 24px;
 }
 
 .filter__cancel {
@@ -94,4 +109,52 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -7px;
 }
 
+.filter__button-wrapper {
+  display: flex;
+  align-items: center;
+}
 
+.filter__slider-size, .filter__slider-color, .filter__slider-contrast{
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .filter {
+    width: 660px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: $white-two;
+    margin-bottom: 40px;
+  }
+
+  .filter__photo-wrapper {
+    flex-shrink: 0;
+  }
+
+  .filter__button-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filter__slider-all {
+    display: none;
+  }
+
+  .filter__slider-size, .filter__slider-color, .filter__slider-contrast{
+    display: block;
+  }
+
+  .filter-button {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+}
