@@ -161,8 +161,54 @@ input[type=range]::-webkit-slider-thumb {
 
 @media (min-width: $desktop-width) {
   .filter {
-    width: $desktop-width;
+    width: 1200px;
+    padding: 0;
   }
 
-  
+  .filter__button-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    min-height: 400px;
+  }
+
+  .filter__photo-wrapper {
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid red;
+    min-width: 30%;
+    padding: 57px 80px;
+  }
+
+  .filter__photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .filter__photo-item {
+    margin-bottom: 0;
+  }
+
+  .filter__slider {
+    min-width: 70%;
+  }
+
+  .filter__unload {
+    margin: 0;
+    width: 183px;
+    margin-right: 55px;
+  }
+
+  .filter__cancel {
+    margin: 0;
+    width: 183px;
+  }
+
+
 }
