@@ -33,7 +33,11 @@
   color: $pink;
 }
 
-.contacts__email, .contacts__phone {
+.contacts__email .contacts__phone {
+  text-decoration: none;
+}
+
+.contacts__email {
   text-decoration: none;
 }
 
@@ -163,4 +167,3 @@
     left: 573px;
   }
 }
-

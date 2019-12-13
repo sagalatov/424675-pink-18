@@ -41,12 +41,12 @@
 
 .publication-card__like {
   display: block;
-    width: 13px;
-    height: 12px;
-    background-image: url(../../img/icon-heart.svg);
-    background-color: inherit;
-    border: none;
-    background-position: 1px;
+  width: 13px;
+  height: 12px;
+  background-image: url(../../img/icon-heart.svg);
+  background-color: inherit;
+  border: none;
+  background-position: 1px;
 }
 
 .publication-card__like-container {
@@ -55,12 +55,15 @@
   justify-content: space-between;
 }
 
-.publication-card__like-description, .publication-card__like-total {
+.publication-card__like-total {
+  color: $pink;
+}
+
+.publication-card__like-description {
   color: $pink;
 }
 
 @media (min-width: $tablet-width) {
-
   .publication-card__panorama {
     background-image: url(../../img/panorama-tablet@1x.jpg);
     min-height: 509px;
@@ -82,6 +85,4 @@
     min-width: 940px;
     min-height: 100px;
   }
-
 }
-

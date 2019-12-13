@@ -80,8 +80,8 @@
 }
 
 .tariff-wrapper label:after {
+  content: " ";
 	border: 2px solid #ddd;
-	content: " ";
 	display: block;
 	height: 12px;
 	left: -4px;
@@ -200,6 +200,3 @@
     height: 45px;
   }
 }
-
-
-
