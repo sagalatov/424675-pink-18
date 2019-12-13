@@ -226,6 +226,57 @@ input[type="radio"] + label, input[type="checkbox"] + label {
 }
 
 @media (min-width: $desktop-width) {
-  width: 1200px;
-  margin: 0 auto;
+
+  .competition-form__filter {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .competition-form__item {
+    min-width: 500px;
+  }
+
+  .competition-form__item-application {
+    min-height: 297px;
+  }
+
+  .competition-form__item-contact-information  .competition-form__list{
+    display: flex;
+    flex-direction: row;
+    min-width: 936px;
+    justify-content: space-between;
+  }
+
+  .competition-form__item-contact-information .site-list__item {
+    flex-direction: column-reverse;
+    width: 400px;
+  }
+
+  .competition-form__item-contact-information input {
+    height: 60px;
+    width: 371px;
+    margin-bottom: 21px;
+    box-sizing: border-box;
+  }
+
+  .competition-form__item-progress {
+    min-width: 936px;
+  }
+
+  .competition-form__item-message {
+    min-width: 936px;
+  }
+
+  .competition-form__item-message textarea {
+    margin: 47px 60px 53px;
+    width: 800px;
+  }
+
+
+  .competition-form__button-wrapper {
+    min-width: 936px;
+  }
 }
