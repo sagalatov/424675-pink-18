@@ -11,7 +11,7 @@
   width: 100%;
   min-width: 360px;
   min-height: 137px;
-  background-image: url(../../img/panorama-mobile@1x.jpg);
+  background-image: url("../../img/panorama-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -43,7 +43,7 @@
   display: block;
   width: 13px;
   height: 12px;
-  background-image: url(../../img/icon-heart.svg);
+  background-image: url("../../img/icon-heart.svg");
   background-color: inherit;
   border: none;
   background-position: 1px;
@@ -65,7 +65,7 @@
 
 @media (min-width: $tablet-width) {
   .publication-card__panorama {
-    background-image: url(../../img/panorama-tablet@1x.jpg);
+    background-image: url("../../img/panorama-tablet@1x.jpg");
     min-height: 509px;
   }
 
@@ -74,14 +74,14 @@
     min-height: 455px;
   }
 
-  .publication-card:nth-child(1){
+  .publication-card:nth-child(1) {
     min-width: 620px;
     min-height: 100px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .publication-card:nth-child(1){
+  .publication-card:nth-child(1) {
     min-width: 940px;
     min-height: 100px;
   }

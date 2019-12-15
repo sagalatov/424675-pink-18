@@ -22,7 +22,9 @@
   text-transform: uppercase;
 }
 
-input[type="text"], input[type="number"], input[type="email"] {
+input[type="text"],
+input[type="number"],
+input[type="email"] {
   display: flex;
   min-width: 177px;
   padding: 22px 79px 18px 22px;
@@ -35,7 +37,10 @@ input[type="text"], input[type="number"], input[type="email"] {
   border-radius: 3px 3px;
 }
 
-input[type="text"]::placeholder, input[type="number"]::placeholder, input[type="email"]::placeholder, textarea::placeholder  {
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
   font-size: 18px;
   line-height: 30px;
   color: $dark-blue;
@@ -59,7 +64,8 @@ textarea::placeholder {
   text-transform: uppercase;
 }
 
-input[type="radio"] + label, input[type="checkbox"] + label {
+input[type="radio"] + label,
+input[type="checkbox"] + label {
   color: $dark-blue;
   font-size: 18px;
   line-height: 30px;
@@ -111,12 +117,13 @@ input[type="radio"] + label, input[type="checkbox"] + label {
 
 
 @media (min-width: $tablet-width) {
-
-  input[type="text"], input[type="number"], input[type="email"] {
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
     flex-direction: row;
   }
 
-  .competition-form  fieldset:not(:nth-child(1)) {
+  .competition-form fieldset:not(:nth-child(1)) {
     border: 2px solid #e5e5e5;
     background: transparent;
   }
@@ -176,7 +183,8 @@ input[type="radio"] + label, input[type="checkbox"] + label {
     box-sizing: border-box;
   }
 
-  input[type="number"], input[type="email"]{
+  input[type="number"],
+  input[type="email"] {
     margin-bottom: 21;
   }
 
@@ -226,7 +234,6 @@ input[type="radio"] + label, input[type="checkbox"] + label {
 }
 
 @media (min-width: $desktop-width) {
-
   .competition-form__filter {
     width: 1200px;
     margin: 0 auto;
@@ -243,7 +250,7 @@ input[type="radio"] + label, input[type="checkbox"] + label {
     min-height: 297px;
   }
 
-  .competition-form__item-contact-information  .competition-form__list{
+  .competition-form__item-contact-information .competition-form__list {
     display: flex;
     flex-direction: row;
     min-width: 936px;

@@ -11,7 +11,7 @@
   position: relative;
   min-height: 402px;
   min-width: 320px;
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 28px;
@@ -74,7 +74,7 @@
   }
 
   .about-application {
-    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -86,7 +86,7 @@
     left: 157px;
     width: 412px;
     height: 468px;
-    background-image: url(../../img/iphone-hand-tablet@1x.png);
+    background-image: url("../../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: -150px 0;
     background-size: cover;
