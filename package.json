@@ -39,6 +39,7 @@
     "node": "8.16"
   },
   "dependencies": {
+    "node-sass": "^4.13.0",
     "normalize.css": "^8.0.1"
   }
 }
