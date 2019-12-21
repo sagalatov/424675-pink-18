@@ -30,6 +30,19 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $pink-down;
+  }
+
+  &:focus {
+    color: $pink;
+  }
 }
 
 .main-nav .site-list__item {
@@ -47,18 +60,20 @@
   background-image: url("../../img/icon-menu-cross.svg");
   background-color: inherit;
   border: none;
+  outline: none;
 }
 
 .main-nav--closed .main-nav__toggle {
   position: absolute;
   top: 21px;
   right: 20px;
-  width: 24px;
-  height: 23px;
+  width: 50px;
+  height: 24px;
   font-size: 0;
   background-image: url("../../img/icon-menu-burger.svg");
   background-color: inherit;
   border: none;
+  outline: none;
 }
 
 @media (min-width: $desktop-width) {
