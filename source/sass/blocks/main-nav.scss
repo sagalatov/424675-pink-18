@@ -44,7 +44,7 @@
   width: 24px;
   height: 23px;
   font-size: 0;
-  background-image: url(../../img/icon-menu-cross.svg);
+  background-image: url("../../img/icon-menu-cross.svg");
   background-color: inherit;
   border: none;
 }
@@ -53,12 +53,10 @@
   .main-nav {
     flex-grow: 0;
     flex-direction: row;
-    border: 1px solid red;
   }
 
   .main-nav__list {
     flex-direction: row;
-    border: 1px solid yellow;
   }
 
   .main-nav__list a {
@@ -73,8 +71,7 @@
     visibility: hidden;
   }
 
+  .main-nav .site-list__item {
+    border-top: none;
+  }
 }
-
-
-
-

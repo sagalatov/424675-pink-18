@@ -27,7 +27,7 @@
 
   .advantages__container::before {
     content: "";
-    background-image: url(../../img/iphone-screen-mobile@1x.png);
+    background-image: url("../../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 300px;
@@ -76,7 +76,6 @@
     align-items: center;
     padding: 0 100px;
     text-align: center;
-
   }
 
   .advantages__photo {
