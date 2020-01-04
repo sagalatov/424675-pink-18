@@ -61,6 +61,7 @@
   background-color: inherit;
   border: none;
   outline: none;
+  z-index: 2;
 }
 
 .main-nav--closed .main-nav__toggle {
@@ -74,6 +75,7 @@
   background-color: inherit;
   border: none;
   outline: none;
+  z-index: 2;
 }
 
 @media (min-width: $desktop-width) {

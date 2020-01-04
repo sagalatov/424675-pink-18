@@ -14,7 +14,14 @@
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 -60px;
   margin-bottom: 28px;
+}
+
+.about-application__container--closed {
+  min-height: 457px;
+  background-position: 0 -1px;
+  top: -65px;
 }
 
 .abiut-application__download {
@@ -51,10 +58,18 @@
   text-align: center;
 }
 
+.about-application__slogan--closed {
+  margin-top: 90px;
+}
+
 .about-application__photo {
   position: absolute;
   top: 117px;
   width: 258px;
+}
+
+.about-application__photo--closed {
+  top: 170px;
 }
 
 .container {
