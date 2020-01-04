@@ -1,6 +1,103 @@
 .reviews {
   margin-bottom: 30px;
 }
+///////////////////////
+
+.reviews__slider {
+  margin-bottom: 100px;
+}
+
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  position: relative;
+  background: #f2f2f2;
+}
+
+.reviews__wrapper blockquote {
+  text-align: center;
+}
+
+
+.reviews__wrapper-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  flex-direction: column;
+  height: inherit;
+  position: relative;
+}
+
+.reviews__wrapper-slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+// #reviews__slide1:checked ~ .reviews__wrapper-slider > .reviews__slide1,
+// #reviews__slide2:checked ~ .reviews__wrapper-slider > .reviews__slide2,
+// #reviews__slide3:checked ~ .reviews__wrapper-slider > .reviews__slide3 {
+//   opacity: 1;
+//   z-index: 1;
+//   transform: scale(1);
+// }
+
+.reviews__slide1 {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
+}
+
+.reviews__wrapper > input {
+  display: none;
+}
+
+.reviews__wrapper .reviews__slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.reviews__wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  border-radius: 50%;
+}
+
+// .reviews__wrapper label:hover,
+// #reviews__slide1:checked ~ .reviews__slider-controls label:nth-of-type(1),
+// #reviews__slide2:checked ~ .reviews__slider-controls label:nth-of-type(2),
+// #reviews__slide3:checked ~ .reviews__slider-controls label:nth-of-type(3) {
+//   background: rgb(218, 216, 216);
+// }
+
+.reviews__slider-controls label:nth-of-type(1) {
+  background: rgb(218, 216, 216);
+}
+
+.reviews__wrapper label::after {
+  content: " ";
+  border: 2px solid rgb(221, 221, 221);
+  display: block;
+  height: 12px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 12px;
+  border-radius: 50%;
+}
 
 .reviews__author-name {
   font-size: 18px;
@@ -13,28 +110,4 @@
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
-}
-
-.reviews__toggles {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider__toggle {
-  padding: 0;
-  width: 6px;
-  height: 6px;
-  margin-left: 19px;
-  outline: none;
-  background: $dark-blue-slider;
-  border-radius: 50%;
-  font-size: 0;
-
-  &:active {
-    background-color: $white;
-    border: 3px solid $dark-blue;
-    width: 12px;
-    height: 12px;
-  }
 }

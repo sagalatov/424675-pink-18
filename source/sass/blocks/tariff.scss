@@ -1,13 +1,12 @@
-.tariff {
+.tariff__list {
   display: none;
-  padding-bottom: 100px;
 }
 
-.tariff-slider {
+.tariff__slider {
   margin-bottom: 100px;
 }
 
-.tariff-wrapper {
+.tariff__wrapper {
   display: flex;
   flex-direction: column;
   height: 500px;
@@ -15,7 +14,7 @@
   background: #f2f2f2;
 }
 
-.slider {
+.tariff__wrapper-slider {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +24,7 @@
   position: relative;
 }
 
-.slides {
+.tariff__wrapper-slides {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,29 +35,32 @@
   z-index: 0;
 }
 
-/*
-#slide1:checked ~ .slider > .slide1,
-#slide2:checked ~ .slider > .slide2,
-#slide3:checked ~ .slider > .slide3 {
+// #tariff__slide1:checked ~ .tariff__wrapper-slider > .tariff__slide1,
+// #tariff__slide2:checked ~ .tariff__wrapper-slider > .tariff__slide2,
+// #tariff__slide3:checked ~ .tariff__wrapper-slider > .tariff__slide3 {
+//   opacity: 1;
+//   z-index: 1;
+//   transform: scale(1);
+// }
+
+.tariff__slide2 {
   opacity: 1;
   z-index: 1;
   transform: scale(1);
 }
-*/
 
-
-.tariff-wrapper > input {
+.tariff__wrapper > input {
   display: none;
 }
 
-.tariff-wrapper .controls {
+.tariff__wrapper .tariff__slider-controls {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.tariff-wrapper label {
+.tariff__wrapper label {
   cursor: pointer;
   display: inline-block;
   height: 8px;
@@ -68,17 +70,18 @@
   border-radius: 50%;
 }
 
-/*
-.tariff-wrapper label:hover,
-#slide1:checked ~ .controls label:nth-of-type(1),
-#slide2:checked ~ .controls label:nth-of-type(2),
-#slide3:checked ~ .controls label:nth-of-type(3) {
+// .tariff__wrapper label:hover,
+// #tariff__slide1:checked ~ .tariff__slider-controls label:nth-of-type(1),
+// #tariff__slide2:checked ~ .tariff__slider-controls label:nth-of-type(2),
+// #tariff__slide3:checked ~ .tariff__slider-controls label:nth-of-type(3) {
+//   background: rgb(218, 216, 216);
+// }
+
+.tariff__slider-controls label:nth-of-type(2) {
   background: rgb(218, 216, 216);
 }
-*/
 
-
-.tariff-wrapper label::after {
+.tariff__wrapper label::after {
   content: " ";
   border: 2px solid rgb(221, 221, 221);
   display: block;
@@ -137,7 +140,7 @@
 
 
 @media (min-width: $tablet-width) {
-  .tariff-slider {
+  .tariff__slider {
     display: none;
   }
 
@@ -151,6 +154,7 @@
   }
 
   .tariff__list {
+    display: block;
     border-collapse: collapse;
     background: $white;
   }
