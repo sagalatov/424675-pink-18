@@ -1,3 +1,7 @@
+.tariff {
+  margin-bottom: 41px;
+}
+
 .tariff__list {
   display: none;
 }
@@ -9,9 +13,21 @@
 .tariff__wrapper {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 444px;
   position: relative;
   background: #f2f2f2;
+
+  &::before {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    content: "";
+    min-height: 150px;
+    width: 360px;
+    background-color: #f2f2f2;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
 }
 
 .tariff__wrapper-slider {
@@ -22,6 +38,7 @@
   flex-direction: column;
   height: inherit;
   position: relative;
+  margin-bottom: -44px;
 }
 
 .tariff__wrapper-slides {
@@ -100,9 +117,13 @@
   width: 100%;
   background-color: $dark-blue;
   color: $white;
+  min-height: 97px;
 }
 
 .tariff__title {
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 2px;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -110,6 +131,7 @@
 }
 
 .tariff__cost {
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
@@ -129,7 +151,7 @@
   justify-content: space-between;
   align-items: center;
   border: 1px solid #e5e5e5;
-  padding: 20px 40px;
+  padding: 14px 39px 14px 42px;
   margin: 0;
   position: relative;
   font-size: 14px;

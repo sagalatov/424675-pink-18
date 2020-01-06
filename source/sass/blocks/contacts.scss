@@ -10,13 +10,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: -5px;
 }
 
 .contacts__title {
   text-align: center;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: normal;
+  margin-bottom: 35px;
 }
 
 .contacts__phone {
@@ -24,17 +26,21 @@
 }
 
 .contacts__text {
+  margin: 0;
   text-align: center;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+  margin-bottom: 27px;
 }
 
 .contacts__text span {
+  display: inline-block;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 26px;
   font-weight: normal;
   color: $pink;
+  margin-top: 7px;
 }
 
 .contacts__email .contacts__phone {
@@ -64,7 +70,7 @@
 .contacts__map-marker {
   position: absolute;
   top: 115px;
-  left: 139px;
+  left: 142px;
 }
 
 @media (min-width: $tablet-width) {
