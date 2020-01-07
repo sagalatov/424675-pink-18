@@ -11,19 +11,8 @@
 .advantages__container {
   background-color: $white-two;
   position: relative;
-
-  &::before {
-    position: absolute;
-    top: -65px;
-    left: 0;
-    content: "";
-    min-height: 150px;
-    width: 360px;
-    background-color: #f2f2f2;
-    transform: rotate(-6deg);
-    z-index: -1;
-  }
 }
+
 
 .advantages__container-img {
   background-image: url("../../img/iphone-screen-mobile@1x.png");
@@ -63,6 +52,36 @@
   p:first-child {
     margin-top: 43px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages__container {
+    background-color: $white-two;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -82px;
+      left: -10px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-bottom: 35px solid $white-two;
+      border-left: 330px solid transparent;
+      z-index: -1;
+    }
+
+    &::after {
+      position: absolute;
+      top: -48px;
+      left: 0;
+      content: "";
+      width: 320px;
+      height: 100px;
+      z-index: -1;
+      background-color: $white-two;
+    }
   }
 }
 

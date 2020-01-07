@@ -2,6 +2,35 @@
   margin-bottom: 41px;
 }
 
+@media (max-width: $mobile-width) {
+  .tariff {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -28px;
+      left: -4px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-bottom: 26px solid $white-two;
+      border-left: 323px solid transparent;
+      z-index: -1;
+    }
+
+    &::after {
+      position: absolute;
+      top: -3px;
+      left: 0;
+      content: "";
+      width: 320px;
+      height: 100px;
+      z-index: -1;
+      background-color: $white-two;
+    }
+  }
+}
+
 .tariff__list {
   display: none;
 }
@@ -16,18 +45,6 @@
   height: 444px;
   position: relative;
   background: #f2f2f2;
-
-  &::before {
-    position: absolute;
-    top: -15px;
-    left: 0;
-    content: "";
-    min-height: 150px;
-    width: 360px;
-    background-color: #f2f2f2;
-    transform: rotate(-5deg);
-    z-index: -1;
-  }
 }
 
 .tariff__wrapper-slider {
