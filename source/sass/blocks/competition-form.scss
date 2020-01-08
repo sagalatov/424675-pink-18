@@ -5,11 +5,34 @@
   align-items: center;
 }
 
+.competition-promo__item {
+  font-size: 15px;
+  line-height: 30px;
+  padding: 0 15px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
 .competition-form__filter {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.filter-last-name-label {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.filter-first-name-label {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.filter-middle-name-label {
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .competition-form fieldset {
@@ -20,22 +43,52 @@
   font-weight: normal;
   color: $pink;
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  margin-left: 25px;
 }
+
+.competition-form-wrapper {
+  background-color: $white-two;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.competition-form__item-full-name-wrapper {
+  margin-bottom: 10px;
+}
+
+.competition-form__contact-information-wrapper {
+  margin-bottom: 10px;
+}
+
+.competition-form_application-wrapper {
+  background-color: $white-two;
+  padding-bottom: 13px;
+}
+
+.competition-form__list-aplication li {
+  display: flex;
+  align-items: center;
+  min-height: 75px;
+}
+
 
 input[type="text"],
 input[type="number"],
 input[type="email"] {
   display: flex;
   min-width: 177px;
-  padding: 22px 79px 18px 22px;
-  margin-bottom: 29px;
-  font-size: 18px;
+  padding: 15px 66px 15px 22px;
+  margin-bottom: 20px;
+  font-size: 19px;
   line-height: 30px;
   color: $dark-blue;
   outline: none;
   border: 2px solid #e5e5e5;
   border-radius: 3px 3px;
 }
+
 
 input[type="text"]::placeholder,
 input[type="number"]::placeholder,
@@ -44,10 +97,11 @@ textarea::placeholder {
   font-size: 18px;
   line-height: 30px;
   color: $dark-blue;
+  font-weight: normal;
 }
 
 textarea::placeholder {
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .competition-form__item:nth-child(2n) {
@@ -62,20 +116,96 @@ textarea::placeholder {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 37px 30px 0 30px;
+  margin-bottom: 13px;
+}
+
+.competition-form__title-application {
+  padding: 38px 30px 0 30px;
+  margin-bottom: 11px;
+}
+
+.competition-form__title-message {
+  padding: 38px 30px 0 30px;
 }
 
 input[type="radio"] + label,
 input[type="checkbox"] + label {
+  position: relative;
   color: $dark-blue;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 30px;
   font-weight: normal;
   text-transform: none;
+  padding-left: 50px;
+}
+
+input[type="checkbox"] {
+  width: 36px;
+  height: 36px;
+  margin-left: 7px;
+  margin-right: 5px;
+}
+
+input[type="checkbox"] + label::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: $white;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../img/icon-yes.svg");
+}
+
+input[type="radio"] {
+  width: 36px;
+  height: 36px;
+  margin-left: 7px;
+  margin-right: 6px;
+}
+
+input[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #e5e5e5;
+  background-color: $white;
+}
+
+input[type="radio"]:checked + label::before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $pink;
+  top: 7px;
+  left: -8px;
+}
+
+.competition-form__list-progress li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 82px;
 }
 
 .competition-form__item textarea {
   width: 276px;
-  height: 197px;
+  height: 192px;
   color: $dark-blue;
   font-size: 18px;
   line-height: 30px;
@@ -84,7 +214,7 @@ input[type="checkbox"] + label {
   border-radius: 3px 3px;
   outline: none;
   resize: none;
-  margin-bottom: 52px;
+  margin-bottom: 33px;
 }
 
 .competition-form__button-wrapper {
@@ -94,8 +224,9 @@ input[type="checkbox"] + label {
 }
 
 .competition-form__button {
-  height: 59px;
+  min-height: 63px;
   font-size: 18px;
+  font-weight: bold;
   line-height: 30px;
   color: $white;
   padding: 12px 47px;
@@ -103,16 +234,29 @@ input[type="checkbox"] + label {
   background: $green;
   border-radius: 3px 3px;
   outline: none;
+  margin-bottom: 35px;
 }
 
 .competition-form__required-fields {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 34px;
 }
 
 .competition-form__required-fields sup {
   color: $pink;
+  font-weight: bold;
+}
+
+.filter-phone-number-label {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.filter-email-number-label {
+  margin: 0;
+  margin-bottom: 14px;
 }
 
 
@@ -136,7 +280,6 @@ input[type="checkbox"] + label {
     order: 1;
     margin-bottom: 69px;
   }
-
 
   .competition-form__item-full-name .site-list__item {
     display: flex;
@@ -163,6 +306,7 @@ input[type="checkbox"] + label {
   .competition-form__item-progress {
     order: 4;
     margin-bottom: 69px;
+    position: relative;
   }
 
   .competition-form__item-contact-information {
@@ -261,6 +405,8 @@ input[type="checkbox"] + label {
     flex-direction: column-reverse;
     width: 400px;
   }
+
+
 
   .competition-form__item-contact-information input {
     height: 60px;
