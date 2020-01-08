@@ -1,15 +1,44 @@
 .publication-card {
   display: flex;
-  border: 1px solid red;
+  border: 1px solid $white;
   flex-direction: column;
   background: $white-two;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: 280px;
+
+  &:nth-last-child(1) {
+    margin-bottom: 24px;
+  }
+}
+
+.publication__photo--popular {
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-color: $pink;
+  }
+
+  &::after {
+    content: "панорма дня";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    color: $white;
+  }
 }
 
 .publication-card__panorama {
   width: 100%;
-  min-width: 360px;
+  min-width: 320px;
   min-height: 137px;
   background-image: url("../../img/panorama-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -17,7 +46,8 @@
 }
 
 .publication-card__description {
-  padding: 20px;
+  margin: 0;
+  padding: 17px 18px 25px 17px;
 }
 
 .publication-card__name {
@@ -27,15 +57,17 @@
 }
 
 .publication-card__time {
+  text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
   font-weight: light;
 }
 
 .publication-card__text {
-  max-width: 230px;
+  margin: 0;
+  margin-bottom: 19px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 23px;
   font-weight: light;
 }
 
@@ -57,11 +89,23 @@
 
 .publication-card__like-total {
   color: $pink;
+  font-weight: normal;
+  font-size: 12px;
+  margin-right: 19px;
+  margin-top: -1px;
 }
 
 .publication-card__like-description {
   color: $pink;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  margin-left: 13px;
 }
+
+// @media (max-width: $mobile-width) {
+
+// }
 
 @media (min-width: $tablet-width) {
   .publication-card__panorama {

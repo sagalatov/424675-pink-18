@@ -1,10 +1,18 @@
 .promo {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 30px;
 }
 
-.promo__item {
+.promo__item-first {
   margin-bottom: 49px;
   text-align: center;
-  padding: 0 40px;
+  padding: 0 35px;
 }
+
+.promo__item-second {
+  margin-bottom: 41px;
+  text-align: center;
+  padding: 0 35px;
+
+}
+
