@@ -57,8 +57,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 64px;
     padding: 0 20px;
+  }
+
+  .page-footer__logo {
+    .page-footer__logo-image {
+      min-height: 83px;
+      margin-top: -10px;
+    }
   }
 
   .page-footer__copyright {
@@ -70,5 +76,18 @@
 
   .page-footer-index {
     display: flex;
+  }
+
+  .page-footer__logo-image {
+    min-height: 83px;
+    margin-left: 2px;
+  }
+
+  .page-footer__htmlacademy-logo {
+    margin-top: 10px;
+  }
+
+  .copyright__text {
+    margin-right: 14px;
   }
 }

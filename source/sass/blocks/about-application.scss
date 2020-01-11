@@ -86,34 +86,38 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    display: inline-block;
+    display: flex;
     position: relative;
-    min-height: 540px;
-    min-width: 660px;
+    align-items: flex-start;
+    min-height: 617px;
     margin: 0 auto;
     padding: 0 20px;
+    min-width: 620px;
   }
 
   .about-application {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+    background-position: -269px -112px;
   }
 
   .container::after {
     content: "";
     position: absolute;
-    top: 70px;
-    left: 157px;
-    width: 412px;
-    height: 468px;
+    top: 44px;
+    left: 115px;
+    width: 529px;
+    height: 600px;
     background-image: url("../../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: -150px 0;
-    background-size: cover;
+    background-position: -134px;
+    background-size: auto;
   }
 
   .about-application__container {
+    display: flex;
+    flex-shrink: 0;
     position: relative;
     background-image: none;
     background-repeat: no-repeat;
@@ -129,14 +133,26 @@
 
   .about-application__support {
     z-index: 1;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding-left: 2px;
   }
 
   .about-application__slogan {
     justify-content: start;
+    flex-shrink: 0;
+    max-width: 300px;
     z-index: 1;
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 89px;
+    margin-bottom: 4px;
   }
 
   .abiut-application__download {
     z-index: 1;
+    padding: 15px 45px;
+    margin-bottom: 46px;
   }
 }

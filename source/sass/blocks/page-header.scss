@@ -45,3 +45,16 @@
     height: 40px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    padding: 27px 20px;
+    margin-bottom: 10px;
+  }
+
+  .page-header__logo img {
+    width: 147px;
+    height: 40px;
+    padding: 0;
+  }
+}

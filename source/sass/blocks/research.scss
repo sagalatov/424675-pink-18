@@ -6,7 +6,7 @@
   .research {
     display: flex;
     flex-direction: row;
-    border: 3px solid yellow;
+    margin-bottom: 12px;
   }
 
   .research__img {
@@ -15,17 +15,16 @@
     justify-content: center;
     min-width: 300px;
     min-height: 300px;
-    border: 1px solid red;
-    padding: 20px;
+    margin-left: -10px;
   }
 
   .research__img::after {
     content: "";
     position: absolute;
-    top: 87px;
+    top: 66px;
     width: 175px;
     height: 175px;
-    border: 15px solid #d22856;
+    border: 14px solid #d22856;
     background: $white-two;
     border-radius: 50%;
   }
@@ -35,12 +34,11 @@
     font-size: 96px;
     font-weight: bold;
     color: $pink;
-    top: 38px;
+    top: 13px;
     z-index: 1;
   }
 
   .research__text-content {
-    border: 1px solid red;
     display: flex;
     min-width: 202px;
     min-height: 295px;
@@ -50,14 +48,22 @@
   .research__title {
     font-size: 30px;
     line-height: 36px;
+    padding: 0 38px 0 38px;
+    margin-top: 48px;
+    margin-bottom: 12px;
   }
 
-  .research__discription {
-    font-size: 16px;
+  .research__description {
+    font-size: 14px;
     line-height: 24px;
+    padding: 0 38px;
+    margin: 0;
+    margin-bottom: 14px;
   }
 
   .research__text-content a {
     color: $pink;
+    font-size: 15px;
+    padding: 0 38px;
   }
 }
