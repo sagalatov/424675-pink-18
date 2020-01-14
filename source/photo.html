@@ -12,10 +12,11 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-        <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-          </picture>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+      </picture>
     </a>
     <nav class="main-nav  main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -42,8 +43,8 @@
       <h1 class="page-main__title">Фотографии пользователей</h1>
     </div>
     <div class="promo">
-      <p class="promo__item-first">
-        Взгляните на фотографии, которые выкладывают пользователи!
+      <p class="promo__item-photo">
+        Взгляните на фотографии, которые выкладывают <br> пользователи!
         Видите, как не хватает ваших?
       </p>
     </div>
@@ -70,14 +71,17 @@
         </div>
         <div class="publication-card">
           <div class="publication-card__photo">
-            <img class="publication-card__logo-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class="publication-card__logo-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография">
+            </picture>
           </div>
           <div class="publication-card__description">
             <b class="publication-card__name">Левон</b>
             <span class="publication-card__time">(5 часов назад)</span>
             <p class="publication-card__text">
-              Вчера он на луну летал, сегодня в руки к нам попал.
+              Вчера он на луну летал, сегодня в<br> руки к нам попал.
             </p>
             <div class="publication-card__like-container">
               <button class="publication-card__like"></button>
@@ -88,8 +92,11 @@
         </div>
         <div class="publication-card">
           <div class="publication-card__photo">
-            <img class="publication-card__logo-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="publication-card__logo-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография">
+            </picture>
           </div>
           <div class="publication-card__description">
             <b class="publication-card__name">Антон</b>
@@ -106,8 +113,11 @@
         </div>
         <div class="publication-card">
           <div class="publication-card__photo">
-            <img class="publication-card__logo-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография">
+            <pocture>
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="publication-card__logo-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография">
+            </pocture>
           </div>
           <div class="publication-card__description">
             <b class="publication-card__name">Борис</b>
@@ -124,8 +134,11 @@
         </div>
         <div class="publication-card">
           <div class="publication-card__photo">
-            <img class="publication-card__logo-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="publication-card__logo-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография">
+            </picture>
           </div>
           <div class="publication-card__description">
             <b class="publication-card__name">Сергей</b>
@@ -142,8 +155,11 @@
         </div>
         <div class="publication-card">
           <div class="publication-card__photo">
-            <img class="publication-card__logo-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="publication-card__logo-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография">
+            </picture>
           </div>
           <div class="publication-card__description">
             <b class="publication-card__name">Максим</b>
@@ -160,15 +176,17 @@
         </div>
         <div class="publication-card">
           <div class="publication-card__photo">
-            <img class="publication-card__logo-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="publication-card__logo-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
+                alt="Фотография">
+            </picture>
           </div>
           <div class="publication-card__description">
             <b class="publication-card__name">Надежда</b>
             <span class="publication-card__time">(45 часов назад)</span>
             <p class="publication-card__text">
               Всем GM и взаимные лайки!
-              lore
             </p>
             <div class="publication-card__like-container">
               <button class="publication-card__like"></button>
@@ -179,35 +197,57 @@
         </div>
       </div>
     </section>
-
     <div class="promo">
-      <p class="promo__item-second">
+      <p class="promo__item-photo-second">
         Затмите их всех!<br>
         Выкладывайте все, что накопилось в телефоне!
       </p>
     </div>
     <section class="filter">
       <div class="filter__photo-wrapper">
-      <div class="filter__photo">
-        <img class="filter__photo-item" src="./img/photo-road-mobile@1x.jpg" width="280" height="374"
-          alt="Фото с фильтром">
+        <div class="filter__photo">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+            <img class="filter__photo-item" src="./img/photo-road-mobile@1x.jpg" width="280" height="374"
+              alt="Фото с фильтром">
+          </picture>
+        </div>
       </div>
-    </div>
-    <div class="filter__button-wrapper">
-      <div class="filter-button">
-        <button class="filter__size"></button>
-        <button class="filter__color"></button>
-        <button class="filter__contrast"></button>
-      </div>
-      <div class="filter__slider">
-        <div class="filter__slider-line">
-          <div class="filter__slider-point">
+      <div class="filter__button-wrapper">
+        <div class="filter-button">
+          <button class="filter__size"></button>
+          <button class="filter__color"></button>
+          <button class="filter__contrast"></button>
+        </div>
+        <div class="filter__slider-wrapper">
+        <div class="filter__slider">
+          <div class="filter__slider-line">
+            <div class="filter__slider-point">
+            </div>
+          </div>
+        </div>
+        <div class="filter__slider-size">
+          <div class="filter__slider-line">
+            <div class="filter__slider-point">
+            </div>
+          </div>
+        </div>
+        <div class="filter__slider-color">
+          <div class="filter__slider-line">
+            <div class="filter__slider-point">
+            </div>
+          </div>
+        </div>
+        <div class="filter__slider-contrast">
+          <div class="filter__slider-line">
+            <div class="filter__slider-point">
+            </div>
           </div>
         </div>
       </div>
-      <button class="filter__unload">Запостить</button>
-      <button class="filter__cancel">Отмена</button>
-    </div>
+        <button class="filter__unload">Запостить</button>
+        <button class="filter__cancel">Отмена</button>
+      </div>
     </section>
   </main>
   <footer class="page-footer">

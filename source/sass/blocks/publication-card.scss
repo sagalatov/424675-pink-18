@@ -103,24 +103,123 @@
   margin-left: 13px;
 }
 
-// @media (max-width: $mobile-width) {
-
-// }
-
 @media (min-width: $tablet-width) {
   .publication-card__panorama {
     background-image: url("../../img/panorama-tablet@1x.jpg");
     min-height: 509px;
+    background-position: center;
+  }
+
+  .publication__photo--popular {
+    &::before {
+      top: 57px;
+    }
+
+    &::after {
+      top: 67px;
+    }
   }
 
   .publication-card {
     width: 300px;
     min-height: 455px;
+    margin-bottom: 18px;
+
+    &:first-child {
+      margin-bottom: 51px;
+    }
   }
+
+  .publication-card__photo img {
+    width: 300px;
+    height: 300px;
+  }
+
 
   .publication-card:nth-child(1) {
     min-width: 620px;
     min-height: 100px;
+  }
+
+  .publication-card__description {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-left: 28px;
+    padding-top: 20px;
+    min-height: 130px;
+  }
+
+  .publication-card__like-container {
+    position: absolute;
+    width: 140px;
+    top: 112px;
+
+    .publication-card__like-total {
+      order: 2;
+      margin-right: 143px;
+    }
+
+    .publication-card__like-description {
+      order: 1;
+      margin: 0;
+      margin-right: 5px;
+    }
+
+    .publication-card__like {
+      position: absolute;
+      left: 226px;
+      order: 3;
+    }
+  }
+
+  .publication-card__description-panorama {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 121px;
+    padding: 23px 10px 24px 29px;
+    min-height: 50px;
+
+    .publication-card__name {
+      order: 1;
+      margin-right: 3px;
+    }
+
+    .publication-card__time {
+      order: 2;
+    }
+
+    .publication-card__text {
+      order: 4;
+      margin-bottom: 0;
+    }
+
+    .publication-card__like-container {
+      position: static;
+      order: 3;
+      align-items: center;
+      margin-left: 304px;
+      max-width: 120px;
+
+
+      .publication-card__like-total {
+        order: 2;
+        margin: 0;
+        margin-left: -10px;
+      }
+
+      .publication-card__like-description {
+        order: 1;
+      }
+
+      .publication-card__like {
+        order: 3;
+        position: static;
+      }
+    }
   }
 }
 

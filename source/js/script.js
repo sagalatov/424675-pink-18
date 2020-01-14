@@ -32,4 +32,3 @@ navToggle && navToggle.addEventListener('click', function () {
     pageMainTitle && pageMainTitle.classList.add('page-main__title--closed');
   }
 });
-
