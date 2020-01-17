@@ -1,15 +1,44 @@
 .publication-card {
   display: flex;
-  border: 1px solid red;
+  border: 1px solid $white;
   flex-direction: column;
   background: $white-two;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: 280px;
+
+  &:nth-last-child(1) {
+    margin-bottom: 24px;
+  }
+}
+
+.publication__photo--popular {
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-color: $pink;
+  }
+
+  &::after {
+    content: "панорма дня";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    color: $white;
+  }
 }
 
 .publication-card__panorama {
   width: 100%;
-  min-width: 360px;
+  min-width: 320px;
   min-height: 137px;
   background-image: url("../../img/panorama-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -17,7 +46,8 @@
 }
 
 .publication-card__description {
-  padding: 20px;
+  margin: 0;
+  padding: 17px 18px 25px 17px;
 }
 
 .publication-card__name {
@@ -27,15 +57,17 @@
 }
 
 .publication-card__time {
+  text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
   font-weight: light;
 }
 
 .publication-card__text {
-  max-width: 230px;
+  margin: 0;
+  margin-bottom: 19px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 23px;
   font-weight: light;
 }
 
@@ -57,26 +89,137 @@
 
 .publication-card__like-total {
   color: $pink;
+  font-weight: normal;
+  font-size: 12px;
+  margin-right: 19px;
+  margin-top: -1px;
 }
 
 .publication-card__like-description {
   color: $pink;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  margin-left: 13px;
 }
 
 @media (min-width: $tablet-width) {
   .publication-card__panorama {
     background-image: url("../../img/panorama-tablet@1x.jpg");
     min-height: 509px;
+    background-position: center;
+  }
+
+  .publication__photo--popular {
+    &::before {
+      top: 57px;
+    }
+
+    &::after {
+      top: 67px;
+    }
   }
 
   .publication-card {
     width: 300px;
     min-height: 455px;
+    margin-bottom: 18px;
+
+    &:first-child {
+      margin-bottom: 51px;
+    }
   }
+
+  .publication-card__photo img {
+    width: 300px;
+    height: 300px;
+  }
+
 
   .publication-card:nth-child(1) {
     min-width: 620px;
     min-height: 100px;
+  }
+
+  .publication-card__description {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-left: 28px;
+    padding-top: 20px;
+    min-height: 130px;
+  }
+
+  .publication-card__like-container {
+    position: absolute;
+    width: 140px;
+    top: 112px;
+
+    .publication-card__like-total {
+      order: 2;
+      margin-right: 143px;
+    }
+
+    .publication-card__like-description {
+      order: 1;
+      margin: 0;
+      margin-right: 5px;
+    }
+
+    .publication-card__like {
+      position: absolute;
+      left: 226px;
+      order: 3;
+    }
+  }
+
+  .publication-card__description-panorama {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 121px;
+    padding: 23px 10px 24px 29px;
+    min-height: 50px;
+
+    .publication-card__name {
+      order: 1;
+      margin-right: 3px;
+    }
+
+    .publication-card__time {
+      order: 2;
+    }
+
+    .publication-card__text {
+      order: 4;
+      margin-bottom: 0;
+    }
+
+    .publication-card__like-container {
+      position: static;
+      order: 3;
+      align-items: center;
+      margin-left: 304px;
+      max-width: 120px;
+
+
+      .publication-card__like-total {
+        order: 2;
+        margin: 0;
+        margin-left: -10px;
+      }
+
+      .publication-card__like-description {
+        order: 1;
+      }
+
+      .publication-card__like {
+        order: 3;
+        position: static;
+      }
+    }
   }
 }
 

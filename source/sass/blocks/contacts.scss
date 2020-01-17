@@ -10,27 +10,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: -5px;
 }
 
 .contacts__title {
   text-align: center;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: normal;
+  margin-bottom: 35px;
+}
+
+.contacts__phone {
+  text-decoration: none;
 }
 
 .contacts__text {
+  margin: 0;
   text-align: center;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+  margin-bottom: 27px;
 }
 
 .contacts__text span {
+  display: inline-block;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 26px;
   font-weight: normal;
   color: $pink;
+  margin-top: 7px;
 }
 
 .contacts__email .contacts__phone {
@@ -60,7 +70,7 @@
 .contacts__map-marker {
   position: absolute;
   top: 115px;
-  left: 139px;
+  left: 142px;
 }
 
 @media (min-width: $tablet-width) {
@@ -75,46 +85,56 @@
     justify-content: space-between;
   }
 
+  .contacts__text span {
+    margin-top: 9px;
+  }
+
   .contacts__email-block {
     flex-grow: 1;
   }
 
   .contacts__phone-block {
     flex-grow: 1;
+    margin-left: 16px;
   }
 
   .contacts__addres-block {
     flex-grow: 1;
-    margin-bottom: 40px;
+    margin-top: 22px;
+    margin-bottom: 9px;
     min-width: 300px;
+
+    span {
+      margin-top: 13px;
+    }
   }
 
   .contacts__map {
     background-image: url("/img/bg-map-tablet@1x.jpg");
     width: 660px;
-    height: 372px;
-    background-position: 0 -350px;
+    height: 374px;
+    background-position: -20px -346px;
   }
 
   .contacts__map-design {
     background-image: url("/img/bg-triangle-white-footer.svg");
     background-size: contain;
-    background-position: 0 0;
+    background-position: 0 -1px;
     z-index: 1;
   }
 
   .contacts__map-marker {
     position: absolute;
-    top: 188px;
-    left: 332px;
+    top: 194px;
+    left: 312px;
   }
 
   .contacts__title {
     text-align: center;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 47px;
     font-weight: light;
-    margin-bottom: 57px;
+    margin-bottom: 48px;
   }
 }
 

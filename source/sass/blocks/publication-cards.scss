@@ -6,12 +6,12 @@
 
 @media (min-width: $tablet-width) {
   .publication-cards__container {
-    width: 660px;
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 21px;
   }
 }
 

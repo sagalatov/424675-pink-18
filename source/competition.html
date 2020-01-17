@@ -12,12 +12,13 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-        <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-          </picture>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+      </picture>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav  main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -31,7 +32,7 @@
             <a>Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="">Html Academy</a>
+            <a href="#">Html Academy</a>
           </li>
         </ul>
       </div>
@@ -44,104 +45,122 @@
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <div class="promo">
-      <p class="promo__item">
-        Поделитесь своей историей и получите шанс выиграть
-        ценный приз — 1000 миль на вашу бонусную карту!
-        Пожалуйста, заполните форму ниже:
+      <p class="promo__item-competition">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
     </div>
     <section class="competition-form">
       <form class="competition-form__filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="competition-form__item competition-form__item-full-name">
-          <ul class="competition-form__list site-list">
-            <li class="site-list__item">
-              <label for="filter-last-name">Фамилия:</label>
-              <input type="text" name="last-name" placeholder="Укажите фамилию *" id="filter-last-name">
-            </li>
-            <li class="site-list__item">
-              <label for="filter-first-name">Имя:</label>
-              <input type="text" name="first-name" placeholder="Укажите имя *" id="filter-first-name">
-            </li>
-            <li class="site-list__item">
-              <label for="filter-middle-name">Отчество:</label>
-              <input type="text" name="middle-name" placeholder="Ну и отчество тоже" id="filter-middle-name">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="competition-form__item competition-form__item-progress">
-          <legend class="competition-form__title">Ваши безбашенные
-            достижения в путешествии</legend>
-          <ul class="competition-form__list site-list">
-            <li class="site-list__item">
-              <input name="selfie" type="checkbox" id="filter-selfie" checked>
-              <label for="filter-selfie">Сделал селфи с акулой</label>
-            </li>
-            <li class="site-list__item">
-              <input name="sunburn" type="checkbox" id="filter-sunburn" checked>
-              <label for="filter-sunburn">Обгорел на пляже</label>
-            </li>
-            <li class="site-list__item">
-              <input name="Chuck_Norris" type="checkbox" id="filter-Chuck_Norris">
-              <label for="filter-Chuck_Norris">Видел Чака Норриса</label>
-            </li>
-            <li class="site-list__item">
-              <input name="souvenirs" type="checkbox" id="filter-souvenirs">
-              <label for="filter-souvenirs">Накупил сувениров</label>
-            </li>
-            <li class="site-list__item">
-              <input name="tower" type="checkbox" id="filter-tower" checked>
-              <label for="filter-tower">Удержал башню</label>
-            </li>
-            <li class="site-list__item">
-              <input name="hotel" type="checkbox" id="filter-hotel">
-              <label for="filter-hotel">Разгромил отель</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="competition-form__item competition-form__item-contact-information">
-          <legend class="competition-form__title">Контактная информация</legend>
-          <ul class="competition-form__list site-list">
-            <li class="site-list__item">
-              <label for="filter-phone-number">Номер телефона</label>
-              <input type="number" name="phone-number" placeholder="Номер, пожалуйста" id="filter-phone-number">
-            </li>
-            <li class="site-list__item">
-              <label for="filter-email-number">Адрес почты</label>
-              <input type="email" name="email-address" placeholder="Введите почту *" id="filter-email-number">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="competition-form__item competition-form__item-application">
-          <legend class="competition-form__title">С каким приложением путешествовали?</legend>
-          <ul class="competition-form__list site-list">
-            <li class="site-list__item">
-              <input type="radio" name="ios" value="electric" id="filter-ios">
-              <label for="filter-ios">Pink для iOS</label>
-            </li>
-            <li class="site-list__item">
-              <input type="radio" name="android" value="on-battery" id="filter-android" checked>
-              <label for="filter-android">Pink на Android</label>
-            </li>
-            <li class="site-list__item">
-              <input type="radio" name="windows-phone" value="electric" id="filter-windows-phone">
-              <label for="filter-windows-phone">Windows Phone</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="competition-form__item-full-name-wrapper">
+          <fieldset class="competition-form__item competition-form__item-full-name">
+            <ul class="competition-form__list site-list">
+              <li class="site-list__item">
+                <p class="filter-last-name-label">
+                  <label for="filter-last-name">Фамилия:</label>
+                </p>
+                <input type="text" name="last-name" placeholder="Укажите фамилию *" id="filter-last-name">
+              </li>
+              <li class="site-list__item">
+                <p class="filter-first-name-label">
+                  <label for="filter-first-name">Имя:</label>
+                </p>
+                <input type="text" name="first-name" placeholder="Ввелите ваше имя *" id="filter-first-name">
+              </li>
+              <li class="site-list__item">
+                <p class="filter-middle-name-label">
+                  <label for="filter-middle-name">Отчество:</label>
+                </p>
+                <input type="text" name="middle-name" placeholder="Ну и отчество тоже" id="filter-middle-name">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="competition-form-wrapper">
+          <fieldset class="competition-form__item competition-form__item-progress">
+            <legend class="competition-form__title">Ваши безбашенные
+              достижения в путешествии</legend>
+            <ul class="competition-form__list site-list competition-form__list-progress">
+              <li class="site-list__item progress">
+                <input class="visually-hidden" name="selfie" type="checkbox" id="filter-selfie" checked>
+                <label for="filter-selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="site-list__item">
+                <input class="visually-hidden" name="sunburn" type="checkbox" id="filter-sunburn" checked>
+                <label for="filter-sunburn">Обгорел на пляже</label>
+              </li>
+              <li class="site-list__item">
+                <input class="visually-hidden" name="Chuck_Norris" type="checkbox" id="filter-Chuck_Norris">
+                <label for="filter-Chuck_Norris">Видел Чака Норриса</label>
+              </li>
+              <li class="site-list__item">
+                <input class="visually-hidden" name="souvenirs" type="checkbox" id="filter-souvenirs">
+                <label for="filter-souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="site-list__item">
+                <input class="visually-hidden" name="tower" type="checkbox" id="filter-tower" checked>
+                <label for="filter-tower">Удержал башню</label>
+              </li>
+              <li class="site-list__item">
+                <input class="visually-hidden" name="hotel" type="checkbox" id="filter-hotel">
+                <label for="filter-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="competition-form__contact-information-wrapper">
+          <fieldset class="competition-form__item competition-form__item-contact-information">
+            <legend class="competition-form__title">Контактная информация</legend>
+            <ul class="competition-form__list site-list">
+              <li class="site-list__item">
+                <p class="filter-phone-number-label">
+                  <label for="filter-phone-number">Номер телефона</label>
+                </p>
+                <input type="number" name="phone-number" placeholder="Номер, пожалуйста" id="filter-phone-number">
+              </li>
+              <li class="site-list__item">
+                <p class="filter-email-number-label">
+                  <label for="filter-email-number">Адрес почты</label>
+                </p>
+                <input type="email" name="email-address" placeholder="Введите почту *" id="filter-email-number">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="competition-form__application-wrapper">
+          <fieldset class="competition-form__item competition-form__item-application">
+            <legend class="competition-form__title competition-form__title-application">С каким приложением
+              путешествовали?</legend>
+            <ul class="competition-form__list competition-form__list-aplication site-list">
+              <li class="site-list__item">
+                <input class="visually-hidden" type="radio" name="ios" value="electric" id="filter-ios" checked>
+                <label for="filter-ios">Pink для iOS</label>
+              </li>
+              <li class="site-list__item">
+                <input class="visually-hidden" type="radio" name="android" value="on-battery" id="filter-android">
+                <label for="filter-android">Pink на Android</label>
+              </li>
+              <li class="site-list__item">
+                <input class="visually-hidden" type="radio" name="windows-phone" value="electric"
+                  id="filter-windows-phone">
+                <label for="filter-windows-phone">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="competition-form__item competition-form__item-message">
-          <legend class="competition-form__title">Опишите свои эмоции</legend>
+          <legend class="competition-form__title competition-form__title-message">Опишите свои эмоции</legend>
           <textarea rows="10" cols="45" name="text-message"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <div class="competition-form__button-wrapper">
-        <button type="submit" class="competition-form__button">
-          Отправить форму
-        </button>
+          <button type="submit" class="competition-form__button">
+            Отправить форму
+          </button>
       </form>
       <small class="competition-form__required-fields">
         <sup>*</sup> — обязательные поля
       </small>
-    </div>
+      </div>
     </section>
   </main>
 
@@ -171,7 +190,7 @@
     </div>
 
   </footer>
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
