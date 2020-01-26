@@ -228,4 +228,60 @@
     min-width: 940px;
     min-height: 100px;
   }
+
+  .publication-card {
+    width: 300px;
+    min-height: 455px;
+    margin-bottom: 44px;
+
+    &:first-child {
+      margin-bottom: 42px;
+    }
+  }
+
+  .publication-card__panorama {
+    background-image: url("../../img/panorama-desktop@1x.jpg");
+    min-height: 507px;
+    background-position: center;
+  }
+
+  .publication__photo--popular {
+    position: relative;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 54px;
+      right: 130px;
+      width: 140px;
+      height: 36px;
+      background-color: $pink;
+    }
+
+    &::after {
+      content: "панорма дня";
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 13px;
+      position: absolute;
+      top: 64px;
+      right: 151px;
+      color: $white;
+    }
+  }
+
+  .publication-card__description-panorama {
+    .publication-card__like-container {
+      position: static;
+      order: 3;
+      align-items: center;
+      margin-left: 620px;
+      max-width: 120px;
+    }
+  }
+
+  .publication-card__photo img {
+    width: 300px;
+    height: 400px;
+  }
 }

@@ -273,25 +273,25 @@
 
 @media (min-width: $desktop-width) {
   .filter {
-    width: 1200px;
+    width: 940px;
     padding: 0;
+    margin-bottom: 62px;
   }
 
   .filter__button-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    min-height: 400px;
+    justify-content: flex-start;
+    min-height: 500px;
   }
 
   .filter__photo-wrapper {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    border: 1px solid red;
     min-width: 30%;
-    padding: 57px 80px;
+    padding: 57px 80px 52px 80px;
   }
 
   .filter__photo {
@@ -303,7 +303,8 @@
   }
 
   .filter__photo-item {
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .filter__slider {
@@ -313,11 +314,100 @@
   .filter__unload {
     margin: 0;
     width: 183px;
-    margin-right: 55px;
+    margin-left: 11px;
+    margin-right: 43px;
   }
 
   .filter__cancel {
     margin: 0;
     width: 183px;
+  }
+
+  .filter__slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 145px;
+    margin-left: 102px;
+    margin-bottom: 92px;
+    margin-top: 30px;
+  }
+
+  .filter__slider-size,
+  .filter__slider-color,
+  .filter__slider-contrast {
+    display: block;
+    position: relative;
+
+    .filter__slider-line {
+      width: 288px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 36px;
+        left: -56px;
+        width: 275px;
+        height: 1px;
+        background-color: $dark-blue-down;
+      }
+    }
+  }
+
+  .filter__slider-size {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -24px;
+      left: -95px;
+      width: 50px;
+      height: 50px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../../img/icon-editor-crop.svg");
+      background-size: 44px 44px;
+    }
+
+    .filter__slider-point {
+      left: 71px;
+    }
+  }
+
+  .filter__slider-color {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -20px;
+      left: -91px;
+      width: 50px;
+      height: 50px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../../img/icon-editor-fill.svg");
+      background-size: 48px 43px;
+    }
+
+    .filter__slider-point {
+      left: 247px;
+    }
+  }
+
+  .filter__slider-contrast {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -24px;
+      left: -95px;
+      width: 50px;
+      height: 50px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../../img/icon-editor-contrast.svg");
+      background-size: 32px 32px;
+    }
+
+    .filter__slider-point {
+      left: 160px;
+    }
   }
 }
