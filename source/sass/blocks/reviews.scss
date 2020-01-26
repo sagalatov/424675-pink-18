@@ -154,3 +154,54 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 78px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: " ";
+      top: -54px;
+      left: 551px;
+      background-image: url("../../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100px;
+      width: 100px;
+      z-index: 1;
+    }
+  }
+
+  .reviews__text {
+    padding: 0 240px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__wrapper-slider {
+    padding-left: 0;
+  }
+
+  .reviews__author-name {
+    position: relative;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+    padding-top: 35px;
+    margin-left: 20px;
+
+    &::after {
+      content: "25 лет, водитель трамвая";
+      position: absolute;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: lighter;
+      top: 68px;
+      left: 478px;
+    }
+  }
+}

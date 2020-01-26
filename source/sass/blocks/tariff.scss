@@ -360,3 +360,90 @@
     text-align: center;
   }
 }
+
+@media (min-width: $desktop-width) and (max-width: $desktop-width) {
+  .tariff {
+    padding-top: 66px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -130px;
+      left: 0;
+      content: "";
+      max-width: 1200px;
+      height: 50px;
+      border-bottom: 80px solid $white-two;
+      border-left: 1200px solid transparent;
+      z-index: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariff {
+    padding-bottom: 95px;
+    margin-bottom: 64px;
+  }
+
+  .tariff__header {
+    min-width: 232px;
+    background: $dark-blue;
+    color: $white;
+    text-transform: uppercase;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px 5px;
+  }
+
+  .tariff__name {
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    padding: 14px 10px 2px 10px;
+  }
+
+  .tariff__cost {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 10px 20px 10px;
+  }
+
+  .tariff__name--hit {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 72px;
+      height: 73px;
+      z-index: 1;
+      background-image: url("../../img/bg-hit.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::after {
+      content: "хит";
+      font-weight: lighter;
+      font-size: 14px;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 9px;
+      left: 8px;
+      width: 40px;
+      height: 40px;
+      z-index: 1;
+    }
+  }
+
+  .tariff__value {
+    font-size: 19px;
+    line-height: 30px;
+    border: 2px solid #e5e5e5;
+    margin: 0;
+    padding: 11px 2px 17px 23px;
+  }
+}

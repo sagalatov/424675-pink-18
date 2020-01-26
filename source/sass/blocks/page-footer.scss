@@ -91,3 +91,13 @@
     margin-right: 14px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 0 130px;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+  }
+}
