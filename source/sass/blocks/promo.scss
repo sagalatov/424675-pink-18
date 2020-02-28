@@ -3,6 +3,17 @@
   line-height: 30px;
 }
 
+.promo__item-photo {
+  text-align: center;
+  padding: 0 30px;
+  margin-bottom: 50px;
+
+  br {
+    display: none;
+  }
+}
+
+
 .promo__item-first {
   margin-bottom: 49px;
   text-align: center;
@@ -15,7 +26,31 @@
   padding: 0 35px;
 }
 
+.promo__item-photo-second {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.promo__item-competition {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.promo__item-competition-todo {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .promo__item-photo {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 75px;
+
+    br {
+      display: block;
+    }
+  }
+
   .promo__item-photo-second {
     margin-bottom: 68px;
     text-align: center;
@@ -28,6 +63,41 @@
     line-height: 30px;
     padding: 0 65px;
     text-align: center;
+    margin-bottom: 0;
+
+    br {
+      display: none;
+    }
+  }
+
+  .promo__item-competition-todo {
+    display: block;
     margin-bottom: 70px;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 65px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__item-photo {
+    text-align: center;
+    padding: 0 300px;
+    margin-bottom: 90px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .promo__item-competition {
+    padding: 0 215px;
+    margin-bottom: 66px;
+  }
+
+  .promo__item-competition-todo {
+    display: none;
   }
 }

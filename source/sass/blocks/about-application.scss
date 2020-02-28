@@ -53,7 +53,7 @@
 
 .about-application__slogan {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   margin-top: 21px;
   display: flex;
   justify-content: center;
@@ -62,6 +62,10 @@
   line-height: 27px;
   font-weight: 300;
   text-align: center;
+
+  br {
+    display: none;
+  }
 }
 
 .about-application__slogan--closed {
@@ -100,6 +104,7 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+    background-position-y: -113px;
   }
 
   .container::after {
@@ -148,6 +153,11 @@
     line-height: 48px;
     margin-top: 89px;
     margin-bottom: 4px;
+    padding: 0;
+
+    br {
+      display: block;
+    }
   }
 
   .abiut-application__download {
