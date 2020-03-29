@@ -98,16 +98,18 @@
     margin: 0;
     margin-bottom: 67px;
     padding: 0;
-    outline: 2px solid red;
+  }
+
+  .research__hours {
+    top: 37px;
   }
 
   .research__img::after {
     content: "";
     position: absolute;
-    top: 66px;
+    top: 93px;
     width: 175px;
     height: 175px;
-    border: 14px solid #d22856;
     background: $white-two;
     border-radius: 50%;
   }

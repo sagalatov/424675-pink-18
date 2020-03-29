@@ -27,19 +27,19 @@
   display: none;
 }
 
-.page-header__logo svg {
-  cursor: pointer;
-    &:hover {
-      * > path {
-        fill: $pink;
-      }
-    &:active {
-      * > path {
-        fill: $white-hover;
-      }
-    }
-  }
-}
+// .page-header__logo svg {
+//   cursor: pointer;
+//     &:hover {
+//       * > path {
+//         fill: $pink;
+//       }
+//     &:active {
+//       * > path {
+//         fill: $white-hover;
+//       }
+//     }
+//   }
+// }
 
 @media (min-width: $tablet-width) {
   .page-header__photos {
@@ -131,7 +131,7 @@
   .logo-pink-white-desktop {
     display: block;
   }
-  
+
   .page-header__logo svg {
     width: 150px;
     height: 57px;
